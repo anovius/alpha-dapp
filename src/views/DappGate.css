@@ -1,0 +1,205 @@
+.buttoncontainer {
+  margin-top: 30px;
+}
+.page-button:hover .connectbutton {
+  color: #ffffff;
+}
+.connectedbutton {
+  display: flex;
+  width: max-content;
+  margin: auto;
+}
+.chainbutton {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 5px;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-template-themepurple);
+}
+
+.page-button {
+  top: 24px;
+  right: 22px;
+  width: 250px;
+  position: absolute;
+  font-size: 16px;
+  transition: 0.3s;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.page-button:hover {
+  color: #ffffff;
+  border-color: #e2e2e2;
+  justify-content: center;
+  background-color: var(--dl-color-template-themepurple);
+  cursor: pointer;
+}
+
+.page-banner {
+  width: 472px;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  align-items: center;
+  border-radius: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+}
+.page-image {
+  width: 179px;
+  height: 152px;
+  object-fit: cover;
+}
+.page-text {
+  color: var(--dl-color-template-themepurple);
+  font-size: 2.5rem;
+  margin-top: var(--dl-space-space-unit);
+  text-align: center;
+  font-family: Rubik;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+}
+.page-text1 {
+  color: var(--dl-color-template-themepurple);
+  max-width: var(--dl-size-size-maxwidth);
+  margin-top: 0px;
+  text-align: center;
+  font-family: Rubik;
+  margin-bottom: 0px;
+}
+.page-text2 {
+  color: var(--dl-color-template-themepurple);
+  max-width: var(--dl-size-size-maxwidth);
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+  font-family: Rubik;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.page-link {
+  color: var(--dl-color-template-themepurple);
+  max-width: var(--dl-size-size-maxwidth);
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+  font-family: Rubik;
+  font-weight: 600;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: underline;
+}
+.page-button1 {
+  width: 100%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.page-button1:hover {
+  color: #ffffff;
+  border-color: #e2e2e2;
+  justify-content: center;
+  background-color: var(--dl-color-template-themepurple);
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .page-banner {
+    padding: var(--dl-space-space-twounits);
+  }
+}
+@media (max-width: 991px) {
+  .page-banner {
+    padding: var(--dl-space-space-twounits);
+  }
+  .page-text1 {
+    max-width: 100%;
+  }
+  .page-text2 {
+    max-width: 100%;
+  }
+  .page-link {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .page-button {
+    top: 21px;
+    right: 17px;
+    margin: auto;
+  }
+  .page-banner {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .page-text1 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .page-text2 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .page-link {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
+@media (max-width: 479px) {
+  .page-container {
+    gap: 0;
+    align-items: center;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .page-button {
+    top: 12px;
+    flex: 0;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    align-self: center;
+    margin-top: auto;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    margin-bottom: auto;
+  }
+  .page-banner {
+    width: 100%;
+    padding: var(--dl-space-space-twounits);
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .page-image {
+    width: 150px;
+    height: 127px;
+  }
+  .page-text {
+    font-size: 2.4rem;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .page-text1 {
+    color: var(--dl-color-template-themepurple);
+    font-size: 13px;
+    margin-top: 0px;
+    font-family: Rubik;
+    margin-bottom: 0px;
+  }
+  .page-link {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
